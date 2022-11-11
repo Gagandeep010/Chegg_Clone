@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    />
+
+    <title>Sign in and Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+    <div class="container">
+      <div class="forms-container">
+       <div class="signin">
+        <form  class="sign-in-from">
+          <h2 class="title">Sign in</h2>
+          <div class="input-field">
+           <i class="fas fa-user"></i>
+           <input type="text" placeholder="Username" id="name" />  
+          </div>
+          <div class="input-field">
+           <i class="fas fa-lock"></i>
+           <input type="password" placeholder="Password" />  
+          </div>
+          <input type="submit" class="btn solid" value="Login" />
+  
+  
+  
+          <p class="social-text">Or <a href="signup.html"><u>Sign up</u></a> with social platforms</p>
+          <div class="social-media">
+            <a  class="social-icon" href="https://www.facebook.com/">
+             <i class="fab fa-facebook-f"></i>
+            </a>
+            <a  class="social-icon" href="https://www.twitter.com/login">
+             <i class="fab fa-twitter"></i>
+            </a>
+            <a class="social-icon"href="https://accounts.google.com/">
+             <i class="fab fa-google"></i>
+            </a>  
+          </div>
+        </form> 
+       </div>
+  
+ 
+
+        </div>
+      </div>
+    </div>
+  </div> 
+  <script>
+    function myfunc(event){
+      event.preventDefault()
+      var name = document.getElementById("name").value;
+      localStorage.setItem('name',name);
+
+    }
+   
+
+
+
+
+  </script>
+</body>
+</html>

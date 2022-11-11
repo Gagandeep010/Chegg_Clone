@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    
+    <body>
+      <form onsubmit="myfunc(event)">
+        <div class="signup">
+          <form  class="sign-up-from">
+            <h2 class="title-signup">Sign Up</h2>
+            <div class="input-field">
+             <i class="fas fa-user"></i>
+             <input type="text" placeholder="Username" id="name" />  
+            </div>
+            <div class="input-field">
+              <ij class="fas fa-envalope"></ij>
+              <input type="email" placeholder="Email" id="mail" />  
+             </div>
+            <div class="input-field">
+             <ij class="fas fa-lock"></ij>
+             <input type="password" placeholder="Password" id="user_password" />  
+            </div>
+
+            <input type="submit" class="signup-login" value="Login" onclick="window.location.href='intex.html'" />
+            </div>
+          </form> 
+         </div>
+      </div>
+      </form>
+     
+
+
+        <script>
+          function myfunc(event){
+            event.preventDefault()
+            const name = document.getElementById("name").value;
+            var mail = document.getElementById("mail").value;
+            var user_password = document.getElementById("user_password").value;
+
+            console.log(name [10]);
+
+
+            localStorage.setItem('name',jSON.stringify(name));
+            localStorage.setItem('mail',mail);
+            localStorage.setItem('user_password',user_password);
+          }
+        </script>    
+          
+    </body>
+</html>
